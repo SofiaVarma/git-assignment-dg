@@ -1,2 +1,9 @@
 def calculator():
-	print("Hi, I am empty calculator")
+    return 'Hi, I am empty calculator'
+    
+def addition(a,b):
+    return a+b
+
+def multiplication(a,b):
+    return a*b
+    
