@@ -1,0 +1,17 @@
+
+
+ ------------------------------------  
+|  git pull = git fetch + git merge  |
+ ------------------------------------
+
+# Once we download all the code to our local system using git clone, and then we make changes to our project. Now, in order to keep our local repository up to date with all the latest changes, we use "git fetch".
+
+# "git fetch" command will bring all the history of changes that were made to the repository since the we downloaded the project for the first time or the last update. 
+
+# "git fetch" command will only fetch history updates but does not update our code.
+
+# For this we use "git merge" command to update our code by looking at the history.
+
+# So, everytime we want to update our code we just launch "git fetch" followed by "git merge".
+
+# So, everytime we run "git pull" command, it first executes "git fetch" then "git merge".
