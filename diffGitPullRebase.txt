@@ -1,0 +1,17 @@
+
+ Difference between "git pull" and "git pull --rebase"
+-------------------------------------------------------
+
+# The --rebase option can be used to ensure a linear history by preventing unnecessary merge commits.
+
+# Normally when we launch a "git pull" command it will run "git fetch" to update the history and initiate "git merge" to 
+
+# We can use pull using rebase instead of merge, i.e. "git pull --rebase"
+
+# "git pull --rebase origin" command simply moves our local changes onto the top of what everybody else has already contributed.
+
+# The difference is the local changes that we made will be rebased on top of the remote changes using "git pull --rebase", instead of being merged with the remote changes.
+
+# Git Merge: It will simply merge your and remote changes, and that will create another commit history record.
+
+# Git Rebase: It will put your changes above all new remote changes, and rewrite commit history, so your commit history will be much cleaner than git merge. Rebase is a destructive operation. That means, if you do not apply it correctly, you could lose committed work and/or break the consistency of other developer's repositories.
